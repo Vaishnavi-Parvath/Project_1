@@ -1,5 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { Sun, Moon, Calendar, Clock, Users, ChefHat, ShoppingCart, MapPin, Search, X, Heart } from 'lucide-react';
+import herod from "../src/assets/herod.jpg"
+import res1 from "../src/assets/res1.jpg"
+import res2 from "../src/assets/res2.jpg"
+import res3 from "../src/assets/res3.jpg"
+import res11 from "../src/assets/res1-1.jpg"
+import res12 from "../src/assets/res1-2.webp"
+import res13 from "../src/assets/res1-3.jpg"
+import res14 from "../src/assets/res1-4.jpg"
+import res21 from "../src/assets/res2-1.jpg"
+import res22 from "../src/assets/res2-2.jpg"
+import res23 from "../src/assets/res2-3.jpg"
+import res24 from "../src/assets/res2-4.jpg"
+import res31 from "../src/assets/res3-1.jpg"
+import res32 from "../src/assets/res3-2.jpg"
+import res33 from "../src/assets/res3-3.jpg"
+import res34 from "../src/assets/res3-4.webp"
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -35,14 +51,14 @@ const App = () => {
       rating: 4.8,
       price: "$$",
       description: "Experience the authentic flavors of the Mediterranean coast with our chef's special recipes passed down through generations.",
-      image: "src/assets/res1.jpg",
+      image: res1,
       location: "123 Olive Street",
       availableTimes: ["17:00", "18:00", "19:00", "20:00", "21:00"],
       menu: [
-        { id: 101, name: "Margherita Pizza", description: "Fresh tomatoes, mozzarella, and basil", price: 14.99, image: "src/assets/res1-1.jpg", category: "Main Course" },
-        { id: 102, name: "Seafood Risotto", description: "Creamy arborio rice with fresh seafood", price: 18.99, image: "src/assets/res1-2.webp", category: "Main Course" },
-        { id: 103, name: "Tiramisu", description: "Classic Italian dessert with coffee and mascarpone", price: 8.99, image: "src/assets/res1-3.jpg", category: "Dessert" },
-        { id: 104, name: "Mediterranean Salad", description: "Fresh greens with feta, olives, and lemon dressing", price: 10.99, image: "src/assets/res1-4.jpg", category: "Appetizer" }
+        { id: 101, name: "Margherita Pizza", description: "Fresh tomatoes, mozzarella, and basil", price: 14.99, image: res11, category: "Main Course" },
+        { id: 102, name: "Seafood Risotto", description: "Creamy arborio rice with fresh seafood", price: 18.99, image: res12, category: "Main Course" },
+        { id: 103, name: "Tiramisu", description: "Classic Italian dessert with coffee and mascarpone", price: 8.99, image: res13, category: "Dessert" },
+        { id: 104, name: "Mediterranean Salad", description: "Fresh greens with feta, olives, and lemon dressing", price: 10.99, image: res14, category: "Appetizer" }
       ]
     },
     {
@@ -52,14 +68,14 @@ const App = () => {
       rating: 4.7,
       price: "$$$",
       description: "Traditional Japanese cuisine with a modern twist, featuring the freshest ingredients and artistic presentation.",
-      image: "src/assets/res2.jpg",
+      image: res2,
       location: "456 Cherry Blossom Avenue",
       availableTimes: ["12:00", "13:00", "18:00", "19:00", "20:00"],
       menu: [
-        { id: 201, name: "Assorted Sushi Platter", description: "Chef's selection of 12 sushi pieces", price: 26.99, image: "src/assets/res2-1.jpg", category: "Main Course" },
-        { id: 202, name: "Ramen Bowl", description: "Rich broth with pork belly, egg, and vegetables", price: 16.99, image: "src/assets/res2-2.jpg", category: "Main Course" },
-        { id: 203, name: "Matcha Ice Cream", description: "Premium green tea ice cream", price: 7.99, image: "src/assets/res2-3.jpg", category: "Dessert" },
-        { id: 204, name: "Edamame", description: "Steamed soybeans with sea salt", price: 5.99, image: "src/assets/res2-4.jpg", category: "Appetizer" }
+        { id: 201, name: "Assorted Sushi Platter", description: "Chef's selection of 12 sushi pieces", price: 26.99, image: res21, category: "Main Course" },
+        { id: 202, name: "Ramen Bowl", description: "Rich broth with pork belly, egg, and vegetables", price: 16.99, image:res22, category: "Main Course" },
+        { id: 203, name: "Matcha Ice Cream", description: "Premium green tea ice cream", price: 7.99, image: res23, category: "Dessert" },
+        { id: 204, name: "Edamame", description: "Steamed soybeans with sea salt", price: 5.99, image: res24, category: "Appetizer" }
       ]
     },
     {
@@ -69,14 +85,14 @@ const App = () => {
       rating: 4.6,
       price: "$$",
       description: "Journey through India's diverse culinary landscape with our aromatic spices and authentic recipes.",
-      image: "src/assets/res3.jpg",
+      image: res3,
       location: "789 Spice Alley",
       availableTimes: ["12:00", "13:00", "14:00", "18:00", "19:00", "20:00", "21:00"],
       menu: [
-        { id: 301, name: "Butter Chicken", description: "Tender chicken in a creamy tomato sauce", price: 17.99, image: "src/assets/res3-1.jpg", category: "Main Course" },
-        { id: 302, name: "Vegetable Biryani", description: "Fragrant rice with seasonal vegetables", price: 15.99, image: "src/assets/res3-2.jpg", category: "Main Course" },
-        { id: 303, name: "Gulab Jamun", description: "Sweet milk dumplings in rose syrup", price: 6.99, image: "src/assets/res3-3.jpg", category: "Dessert" },
-        { id: 304, name: "Samosa", description: "Crispy pastry filled with spiced potatoes and peas", price: 7.99, image: "src/assets/res3-4.webp", category: "Appetizer" }
+        { id: 301, name: "Butter Chicken", description: "Tender chicken in a creamy tomato sauce", price: 17.99, image: res31, category: "Main Course" },
+        { id: 302, name: "Vegetable Biryani", description: "Fragrant rice with seasonal vegetables", price: 15.99, image: res32, category: "Main Course" },
+        { id: 303, name: "Gulab Jamun", description: "Sweet milk dumplings in rose syrup", price: 6.99, image: res33, category: "Dessert" },
+        { id: 304, name: "Samosa", description: "Crispy pastry filled with spiced potatoes and peas", price: 7.99, image: res34, category: "Appetizer" }
       ]
     }
   ];
@@ -214,7 +230,7 @@ const App = () => {
         <section
           id="hero"
           className="relative h-screen bg-cover bg-center flex items-center justify-center"
-          style={{ backgroundImage: `url('src/assets/herod.jpg')` }}
+          style={{ backgroundImage: `url(${herod})` }}
         >
           <div className="absolute inset-0 bg-grey-700 bg-opacity-100"></div>
           <div className="container mx-auto px-4 z-10 text-white text-center">
