@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Sun, Moon, Calendar, Clock, Users, ChefHat, ShoppingCart, MapPin, Search, X, Heart } from 'lucide-react';
 
-
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [selectedRestaurant, setSelectedRestaurant] = useState(null);
